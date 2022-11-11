@@ -404,6 +404,12 @@ ul li{
 #card-price .yellow:hover{
     border : 1px solid #EDCB50;
 }
+#card-price .blue:hover{
+    border : 1px solid #1681FE;
+}
+#card-price .green:hover{
+    border : 1px solid #448C74;
+}
 
 #card-price .trophy{
     display:flex;
@@ -495,7 +501,7 @@ ul li{
     color: #293241;
 }
 
-#card-price ul li::before{
+#card-price .yellow ul .nyala::before{
     content: " ";
     width:24px;
     height:24px;
@@ -504,9 +510,31 @@ ul li{
     background-size: cover;
     background-repeat: no-repeat;
 }
+#card-price .blue ul .nyala::before{
+    content: " ";
+    width:24px;
+    height:24px;
+    background-image:url(../images/icons/Approve.png);
+    margin-right: 16px;
+    filter: invert(56%) sepia(62%) saturate(6786%) hue-rotate(200deg)
+    brightness(102%) contrast(106%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#card-price .green ul .nyala::before{
+    content: " ";
+    width:24px;
+    height:24px;
+    background-image:url(../images/icons/Approve.png);
+    margin-right: 16px;
+    filter: invert(45%) sepia(67%) saturate(316%) hue-rotate(109deg)
+    brightness(92%) contrast(79%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 #card-price ul .mati::before{
-    content: " ";
+    content:" ";
     width:24px;
     height:24px;
     background-image:url(../images/icons/Close.svg);
