@@ -1,5 +1,5 @@
 /*CSS RESET*/
-body,ul,h1,h5,p{
+body,ul,ol,h1,h2,h4,h5,p,li{
     margin:0;
     padding:0;
 }
@@ -17,13 +17,57 @@ body{
     align-items: center;
 }
 
+.container .title h2{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    /* padding-bottom:70px; */
+    /* or 62px */
+
+    text-align: center;
+
+    color: #293241;
+}
+
+.container .title p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    padding-top:24px;
+    text-align: center;
+
+    /* Color/300 */
+
+    color: #7F848D;
+}
+
+.col-8{
+    width:calc(100% * 2/3);
+}
+
+.col-6{
+    width:calc(50%);
+}
+
 /* col-4 */
 .col-4{
     width:calc(100% / 3);
 }
 /* col-3 */
 .col-3{
-    width:calc(100% / 4);
+    width:calc(25%);
+}
+ul li{
+    color: #D4D6D9;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
 }
 
 /* navbar */
@@ -107,6 +151,8 @@ body{
 #hero{
     background-color: #0D1728;
     height: 1276px;
+    margin-top:0;
+    margin-bottom:440px;
     background-image: url("../images/background-hero.png");
     background-position: -295px -449px;
 }
@@ -189,19 +235,8 @@ body{
 
 /* customer */
 
-#customer .container h5{
-    padding-top: 423px;
-    font-family: 'Anybody';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 130%;
-    padding-bottom:70px;
-    /* or 62px */
-
-    text-align: center;
-
-    color: #293241;
+#customer .title{
+    padding-bottom: 70px;
 }
 
 #customer .card{
@@ -227,53 +262,35 @@ body{
 }
 /* work */
 
-#work .description{
+#work .title{
     flex-direction: column;
     padding-top: 150px;
     padding-bottom: 70px;
 }
-#work .description h5{
-    font-family: 'Anybody';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 130%;
-    /* or 62px */
 
-    text-align: center;
-
-    color: #293241;
-}
-#work .description p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-
-    text-align: center;
-
-    /* Color/300 */
-
-    color: #7F848D;
-}
-#work .card-group{
+#work-card{
     padding: 41px 0;
     background-image: url('../images/bg-work.png');
-    background-position: center center;
+    background-position: 45% center;
     background-size: cover;
+    flex-wrap: nowrap;
 }
 
-#work .card{
+#work-card .card{
     margin:0 12px;
     background: #1E2746;
     border-radius: 18px;
     padding: 24px;
     background-image: url('../images/Group.png');
     background-size: cover;
+    background-repeat:no-repeat;
 }
-#work .card h5{
+
+#work-card .card ol{
+    padding-left:30px;
+    margin-bottom: 16px;
+}
+#work-card .card ol li{
     font-family: 'Anybody';
     font-style: normal;
     font-weight: 700;
@@ -283,7 +300,7 @@ body{
     /* Color/White */
     color: #FFFFFF;
 }
-#work .card p{
+#work-card .card p{
     font-family: 'Anybody';
     font-style: normal;
     font-weight: 400;
@@ -293,6 +310,211 @@ body{
     /* Color/100 */
     color: #D4D6D9;
 }
+
+/* analysis */
+
+#analysis .container{
+    justify-content: space-between;
+    padding: 200px 0;
+}
+
+#analysis .image,#analysis .title{
+    padding:0 12px;
+}
+
+#analysis .title h2 ,#analysis .title p {
+    text-align: start;
+    /* filter:drop-shadow(0 4px 4px rgba(0,0,0,.25)) */
+    text-shadow: 0 4px 4px rgba(0,0,0,.25);
+}
+
+/* Analytise */
+
+#analytise{
+    padding: 150px 0;
+    background-color: #293241;
+}
+#analytise .image,#analytise .title{
+    padding:0 12px;
+}
+
+#analytise span{
+    background: #EDCB50;
+    font-family: 'Inter';
+    border-radius: 8px;
+    padding: 6px 16px;
+}
+
+
+#analytise h2{
+    color: #FFFFFF;
+    text-align: start;
+}
+#analytise .title ul li{
+    color: #D4D6D9;
+}
+
+#analytise ul li::before{
+    content: " ";
+    width:32px;
+    height:32px;
+    background-image:url(../images/icons/Archery.svg);
+    margin-right: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#analytise .title h2{
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+#analytise .title p{
+    padding:0;
+    font-size: 18px;
+}
+
+/* pricing */
+#pricing{
+    padding-top: 150px;
+    padding-bottom: 74px;
+}
+
+#pricing, #card-price{
+    background: #F0F9FF;
+}
+
+#pricing title p{
+    margin-top: 32px;
+    margin-bottom : 74px;
+}
+
+#card-price{
+    padding-bottom:150px;
+}
+#card-price .card{
+    position:relative;
+    margin: 0 12px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 32px;
+    border : 1px solid transparent;
+}
+
+#card-price .yellow:hover{
+    border : 1px solid #EDCB50;
+}
+
+#card-price .trophy{
+    display:flex;
+    align-items:flex-end;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #EAEBEC;
+    margin-bottom: 50px;
+}
+
+.trophy .cup{
+    padding: 14px;
+    border-radius: 12px;
+}
+
+#card-price .yellow .cup{
+    background: #EDCB50;
+}
+#card-price .blue .cup{
+    background: #1681FE;
+}
+#card-price .green .cup{
+    background: #448C74;
+}
+
+.trophy .cup img{
+    width:44px;
+    height:44px;
+}
+
+#card-price .trophy .price{
+    display:flex;
+    flex-direction: column;
+    margin-left:12px;
+    margin-right:8px;
+    gap:8px;
+    justify-content: start;
+}
+
+#card-price .trophy .price h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 42px;
+    /* identical to box height, or 100% */
+    /* Color/500 */
+    color: #293241;
+}
+
+#card-price .trophy .pmonth{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    /* Color/400 */
+    color: #545B67;
+    margin-bottom: 8px;
+}
+
+#card-price .trophy .price h4 > span{
+    font-size:24px;
+}
+
+#card-price .trophy .price h5{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+}
+
+#card-price .yellow .trophy .price h5{
+    color: #EDCB50;
+}
+
+#card-price ul li{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+/* identical to box height */
+    color: #293241;
+}
+
+#card-price ul li::before{
+    content: " ";
+    width:24px;
+    height:24px;
+    background-image:url(../images/icons/Approve.png);
+    margin-right: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#card-price ul .mati::before{
+    content: " ";
+    width:24px;
+    height:24px;
+    background-image:url(../images/icons/Close.svg);
+    margin-right: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 /* test */
 .test{
