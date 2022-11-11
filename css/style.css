@@ -391,6 +391,7 @@ ul li{
 
 #card-price{
     padding-bottom:150px;
+
 }
 #card-price .card{
     position:relative;
@@ -401,14 +402,25 @@ ul li{
     border : 1px solid transparent;
 }
 
+/* #card-price .blue{
+    background-image: url(../images/Group.png);
+    background-repeat: no-repeat;
+} */
+
 #card-price .yellow:hover{
     border : 1px solid #EDCB50;
+    background-image: url(../images/Group.png);
+    background-repeat: no-repeat;
 }
 #card-price .blue:hover{
     border : 1px solid #1681FE;
+    background-image: url(../images/Group.png);
+    background-repeat: no-repeat;
 }
 #card-price .green:hover{
     border : 1px solid #448C74;
+    background-image: url(../images/Group.png);
+    background-repeat: no-repeat;
 }
 
 #card-price .trophy{
@@ -490,6 +502,16 @@ ul li{
 #card-price .yellow .trophy .price h5{
     color: #EDCB50;
 }
+#card-price .blue .trophy .price h5{
+    color: #1681FE;
+}
+#card-price .green .trophy .price h5{
+    color: #448C74;
+}
+
+#card-price ul{
+    margin-bottom:50px;
+}
 
 #card-price ul li{
     font-family: 'Anybody';
@@ -543,7 +565,43 @@ ul li{
     background-repeat: no-repeat;
 }
 
+#card-price button{
+    border-radius: 12px;
+    align-items: center;
+    padding: 14px 24px;
+    width: 100%;
+    background-color: white;
+}
 
+#card-price .yellow button{
+    border: 1px solid #EDCB50;
+    color:#EDCB50;
+}
+#card-price .blue button{
+    border: 1px solid #1681FE;
+    color:#1681FE;
+}
+#card-price .green button{
+    border: 1px solid #448C74;
+    color:#448C74;
+}
+
+#card-price .recomended{
+padding: 6px 16px;
+background: #1681FE;
+border-radius: 8px;
+position: absolute;
+top:32px;
+right:32px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #FFFFFF;
+}
 /* test */
 .test{
     background-color:green;
