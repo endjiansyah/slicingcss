@@ -46,12 +46,19 @@ body{
     color: #7F848D;
 }
 
+.col-10{
+    width:calc(100% * 5/6);
+}
+
 .col-8{
     width:calc(100% * 2/3);
 }
 
 .col-6{
     width:calc(50%);
+}
+.col-5{
+    width:calc(100% * 5/12);
 }
 
 /* col-4 */
@@ -62,6 +69,11 @@ body{
 .col-3{
     width:calc(25%);
 }
+
+.col-1{
+    width:calc(100% * 1/12);
+}
+
 ul li{
     color: #D4D6D9;
     list-style: none;
@@ -587,21 +599,233 @@ ul li{
 }
 
 #card-price .recomended{
-padding: 6px 16px;
-background: #1681FE;
-border-radius: 8px;
-position: absolute;
-top:32px;
-right:32px;
-font-family: 'Inter';
+    padding: 6px 16px;
+    background: #1681FE;
+    border-radius: 8px;
+    position: absolute;
+    top:32px;
+    right:32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+
+#testimoni{
+    padding-top: 150px;
+    padding-bottom: 74px;
+}
+
+#testimoni .title{
+    margin-bottom:74px;
+}
+
+/* #testimoni .carousel{
+    display: flex;
+    justify-content: space-between;
+} */
+#carousel{
+    padding-bottom: 150px;
+}
+
+#carousel .left{
+    justify-content: flex-start;
+}
+
+#carousel .left img{
+    rotate: 180deg;
+    padding:10px;
+    background: rgba(22, 129, 254, 0.1);
+    border-radius: 10px;
+}
+
+#carousel .center{
+    padding:32px;
+    display:flex;
+    gap:36px;
+    background: #F0F9FF;
+    border-radius: 18px;
+
+}
+#carousel .isi-carousel h3{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    /* identical to box height */
+    /* Color/600 */
+    color: #212834;
+}
+
+#carousel .isi-carousel p span{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    /* identical to box height */
+    /* Color/300 */
+    color: #7F848D;
+}
+
+#carousel .isi-carousel img{
+    margin-bottom:24px;
+}
+
+#carousel .isi-carousel p{
+    font-family: 'Anybody';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    /* or 118% */
+
+
+    /* Color/500 */
+
+    color: #293241;
+    margin-bottom:16px;
+
+}
+
+#carousel .right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#carousel .right img{
+    
+    padding:10px;
+    background: #1C51FD;
+    border-radius: 10px;
+}
+
+/* best */
+
+#best{
+    margin-bottom:294px;
+}
+
+
+#best .container{
+    background: #293241;
+    border-radius: 40px;
+    padding-top:65px;
+    padding-left:60px;
+    gap:150px;
+}
+
+#best .title h2{
+    color: #FFFFFF;
+    text-align: start;
+}
+
+#best .title p{
+    text-align:start;
+}
+
+#best .gambar{
+    justify-content: flex-end;
+}
+
+
+#best .button a{
+    width: 237px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    padding:19px 32px;
+    background:#fff;
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color:#293241;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top:32px;
+}
+
+#footer{
+    border-top: 1px solid #EAEBEC;
+    padding: 70px 0;
+}
+
+#footer .container{
+    align-items: flex-start;
+    gap: 150px;
+}
+
+
+#footer .copy, .link, .legal, .social{
+    align-items: flex-start;
+}
+
+#footer p{
+    
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+
+
+    /* Color/300 */
+    margin-bottom:24px;
+    color: #7F848D;
+}
+
+#footer .copy p{
+    margin-top: 15px;
+    margin-bottom:24px;
+}
+
+#footer .legal, #footer .link{
+    font-size:16px;
+}
+
+.legal p, .link p{
+    margin-bottom: 16px;
+}
+
+#footer p span{
+    
+    color: #293241;
+}
+
+#footer .social h5{
+    font-family: 'Anybody';
 font-style: normal;
-font-weight: 400;
-font-size: 14px;
+font-weight: 700;
+font-size: 16px;
 line-height: 17px;
 /* identical to box height */
 
-color: #FFFFFF;
+
+/* Color/500 */
+
+color: #293241;
 }
+#footer .social .button-group{
+    padding:18px 0;
+    display: flex;
+    gap: 16px;
+}
+
+#footer .social .button-group .button{
+    background: #EAEBEC;
+    border-radius: 8px;
+    padding: 10px;
+}
+
 /* test */
 .test{
     background-color:green;
