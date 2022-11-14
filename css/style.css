@@ -733,6 +733,10 @@ ul li{
     justify-content: flex-end;
 }
 
+#best .gambar img{
+    border-bottom-right-radius: 30px;
+}
+
 
 #best .button a{
     width: 237px;
